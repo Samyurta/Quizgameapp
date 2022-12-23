@@ -28,28 +28,27 @@ class _HomePageState extends State<HomePage> {
                   height: 80,
                 ),
                 Image.asset('assets/images2.jpg'),
-                SizedBox(height: 30,),
-                ElevatedButton( 
-          
-                    onPressed: () {
-                  Navigator.push(context,
-         MaterialPageRoute(builder: (context) => QuizScreen()),
-        );
-         },
-        style: ElevatedButton.styleFrom(
-       primary: Colors.black,
-        onPrimary: Colors.amber,
-         elevation: 20,  // Elevation
-         shadowColor: Colors.amber, 
-        shape: BeveledRectangleBorder(
-       borderRadius: BorderRadius.circular(12)
-     ),
-   ),
-           child:Text("Get Started",
-           style:TextStyle(fontSize:21,color: Colors.yellow )
-          
-         ),
-     ),  
+                SizedBox(
+                  height: 30,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => QuizScreen()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.black,
+                    onPrimary: Colors.amber,
+                    elevation: 20, // Elevation
+                    shadowColor: Colors.amber,
+                    shape: BeveledRectangleBorder(
+                        borderRadius: BorderRadius.circular(12)),
+                  ),
+                  child: Text("Get Started",
+                      style: TextStyle(fontSize: 21, color: Colors.yellow)),
+                ),
               ],
             ),
           ],
@@ -58,5 +57,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-     
